@@ -10,7 +10,8 @@ routes.get('/users', UserController.index); // Listar todos
 routes.post('/users', UserController.store); // Criar
 routes.get('/users/:id', UserController.show); // Buscar
 routes.delete('/users/:id', UserController.delete); // Deletar
+
 routes.use(auth);
-routes.put('/users/:id', UserController.update); // Editar
+routes.put('/users', UserController.update); // Editar
 
 export default routes;
